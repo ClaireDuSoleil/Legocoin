@@ -11,6 +11,10 @@ What is Legocoin?
 
 Legocoin is a mish-mash of Litecoin, Dogecoin, and some new code I wrote.  It was created solely for fun and to demonstrate various new features that I have developed, such as the ability to snap a region of your desktop containing a QR image and converting it to a Legocoin address or private key for importing into a wallet.
 
+A 3 minute Youtube video demo of the snap QR feature is [here](http://youtu.be/5NCiHGIMB2c).
+
+To use the snap QR feature, you first need to build the [ZebraCrossing Library](https://github.com/ClaireDuSoleil/ZebraCrossing) along with all the other required dependencies of bitcoin.
+
 The mining algorithm is super easy so you can create coins very quickly running in testnet.
 
 Building
