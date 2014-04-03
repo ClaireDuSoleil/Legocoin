@@ -108,7 +108,7 @@
       <SubSystem>Windows</SubSystem>
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
       <AdditionalLibraryDirectories>..\..\..\bitcoindeps\ZebraCrossing\build64\Debug;..\..\..\bitcoindeps\qrencode-win32\vc8\x64\Debug;..\..\..\BitcoinDeps\miniupnpc\msvc\x64\Debug;..\..\..\bitcoindeps\qtdir64\qtbase\plugins\platforms;..\..\..\bitcoindeps\qtdir64\qtbase\lib;..\..\..\bitcoindeps\db-4.7.25.NC\build_windows\Debug_AMD64;..\..\..\bitcoindeps\boost_1_55_0\stage\lib\x64;..\..\..\bitcoindeps\openssl-1.0.1e\out64.dbg;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>lib-qrcode.lib;iphlpapi.lib;ws2_32.lib;kernel32.lib;user32.lib;shell32.lib;uuid.lib;ssleay32.lib;libeay32.lib;miniupnpc.lib;libdb47sd.lib;Shlwapi.lib;%(AdditionalDependencies);ole32.lib;advapi32.lib;gdi32.lib;comdlg32.lib;oleaut32.lib;imm32.lib;winmm.lib;qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;Qt5Networkd.lib;qwindowsd.lib;Qt5PlatformSupportD.lib</AdditionalDependencies>
+      <AdditionalDependencies>libzxing.lib;lib-qrcode.lib;iphlpapi.lib;ws2_32.lib;kernel32.lib;user32.lib;shell32.lib;uuid.lib;ssleay32.lib;libeay32.lib;miniupnpc.lib;libdb47sd.lib;Shlwapi.lib;%(AdditionalDependencies);ole32.lib;advapi32.lib;gdi32.lib;comdlg32.lib;oleaut32.lib;imm32.lib;winmm.lib;qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;Qt5Networkd.lib;qwindowsd.lib;Qt5PlatformSupportD.lib</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -303,7 +303,10 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_snapwidget.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_snapwidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_splashscreen.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
@@ -460,6 +463,10 @@
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Release\moc_signverifymessagedialog.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_snapwidget.cpp">
+	 <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Release\moc_splashscreen.cpp">

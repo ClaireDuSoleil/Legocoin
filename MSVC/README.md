@@ -1,4 +1,4 @@
-#Build Instructions for Bitcoin in Visual Studio 2013
+#Build Instructions for Bitcoin or *Coin in Visual Studio 2013
 
 ----------
 
@@ -17,6 +17,7 @@ To build all of the required dependencies, you first must download them.  Here t
 - [qrencode-unknown version](http://qrencode-win32.googlecode.com/archive/681f2ea7a41f919486d9932b3352a2e6920e1cb9.zip)
 - [boost-1.55](http://softlayer-dal.dl.sourceforge.net/project/boost/boost/1.55.0/boost_1_55_0.zip)
 - [BerkeleyDB-4.7.25](http://download.oracle.com/berkeley-db/db-4.7.25.NC.tar.gz)
+- [ZebraCrossing](https://github.com/ClaireDuSoleil/ZebraCrossing)
 
 If you want to use alternative versions of these packages, then my batch and project files may not work.  
 
@@ -28,6 +29,7 @@ Make sure you have perl, python and nasm installed and ***in your path***:
 - [ActivePerl](http://www.activestate.com/activeperl/downloads)
 - [Python](http://www.python.org/download/releases/)
 - [nasm](http://sourceforge.net/projects/nasm/files/latest/download)
+- [cmake](http://www.cmake.org/cmake/resources/software.html)
 
 
 Since this guide is written for building with Visual Studio 2013, please make sure that is installed with all the latest updates.  As of this writing (March 6th, 2014), there is only Update 1 for VS2013 which is available [here](http://download.microsoft.com/download/8/2/6/826E264A-729E-414A-9E67-729923083310/VSU1/VS2013.1.exe).
@@ -52,8 +54,10 @@ Also, copy the build-helpers directory to C:\MyProjects\BitcoinDeps.  Here is wh
             qrencode-win32\
             qtdir32\
             qtdir64\
+            ZebraCrossing\
         bitcoin-master-0.8.6\
         Feathercoin-master-0.8.6\
+        Legocoin\
         litecoin-master-0.8.6.2\
 
 
