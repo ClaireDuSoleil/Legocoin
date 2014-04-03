@@ -39,6 +39,9 @@ SendCoinsDialog::SendCoinsDialog(QWidget *parent) :
     ui->lineEditCoinControlChange->setPlaceholderText(tr("Enter a Legocoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)"));
 #endif
 
+#ifndef USE_ZXING
+    this->ui->sendQRButton->hide();
+#endif
     addEntry();
 
     connect(ui->addButton, SIGNAL(clicked()), this, SLOT(addEntry()));
