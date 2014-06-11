@@ -1,7 +1,6 @@
 #ifndef SNAPWIDGET_H
 #define SNAPWIDGET_H
-#include <QtWidgets>
-#include <QDialog> 
+
 #include "ui_snapwidget.h"
 #include "addressbookpage.h"
 
